@@ -1,0 +1,11 @@
+@mixin font($size, $weight, $color: #fefefe) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+@mixin empty-pseudo {
+	content: ".";
+	font-size: 0;
+	color: transparent;
+}

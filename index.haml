@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+%html{:lang => "en"}
+%head
+	%meta{:charset => "UTF-8"}/
+	%title Document
+	%link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"}
+	%link{:href => "css/style.css", :rel => "stylesheet"}
+%body
+	.wrapper
+		.container 
+			.row
+				.block-sidebar.col-xs-3
+					%ol
+						%li
+							%a.active{:href => "#"}
+								%span.text 1. Offer
+								%span.offer.icon
+						%li
+							%a{:href => "#"}
+								%span.text 2. Benefits
+								%span.benefits.icon 
+						%li
+							%a{:href => "#"}
+								%span.text 3. Redemption
+								%span.redem.icon 
+						%li
+							%a{:href => "#"}
+								%span.text 4. Communication
+								%span.commun.icon
+						%li
+							%a{:href => "#"}
+								%span.text 5. Business Rules
+								%span.rules.icon 
+						%li 
+							%a{:href => "#"}
+								%span.text 6. Sponsors
+								%span.spons.icon
+				.block-main.col-xs-9
+					.tabs
+						%ul.tab-nav
+							%li.tab-select(data-name="general" data-target="tab-1")
+								%a{href: '#/general'} General
+							%li.tab-select(data-name="additional" data-target="tab-2") 
+								%a{href: '#/additional'} Additional
+							%li.tab-select(data-name="confirmation" data-target="tab-3")
+								%a{href: '#/confirmation'} Confirmation
+						.tab-panels
+							#tab-1.tab-panel
+								.tab-select(data-name="general" data-target="tab-1")
+									%a{href: '#/general'} General
+									%span.oper
+								.content
+									General content
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, deleniti,eligendi, nobis id rem ratione praesentium mollitia asperiores eos at totam incidunt amet aliquid nisi vitae magni cum sint alias. Excepturi, delectus,sunt, quasi, suscipit error ipsum distinctio tenetur impedit quod odio odit amet illo cumque consequuntur sint laborum voluptatibus.
+							#tab-2.tab-panel
+								.tab-select(data-name="additional" data-target="tab-2") 
+									%a{href: '#/additional'} Additional
+									%span.oper
+								.content
+									Additional content
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, deleniti, eligendi, nobis id rem ratione praesentium mollitia asperiores eos at totam incidunt amet aliquid nisi vitae magni cum sint alias. Excepturi, delectus, sunt, quasi, suscipit error ipsum distinctio tenetur impedit quod odio odit amet illo cumque consequuntur sint laborum voluptatibus.
+							#tab-3.tab-panel
+								.tab-select(data-name="confirmation" data-target="tab-3")
+									%a{href: '#/confirmation'} Confirmation
+									%span.oper
+								.content
+									Confirmation content
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, deleniti, eligendi, nobis id rem ratione praesentium mollitia asperiores eos at totam incidunt amet aliquid nisi vitae magni cum sint alias. Excepturi, delectus, sunt, quasi, suscipit error ipsum distinctio tenetur impedit quod odio odit amet illo cumque consequuntur sint laborum voluptatibus.
+
+	%script(type="text/javascript" src="js/main.js")
